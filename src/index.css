@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic typography */
+@layer base {
+  h1 { @apply text-2xl md:text-3xl font-semibold text-gray-900; }
+  h2 { @apply text-xl md:text-2xl font-semibold text-gray-900; }
+  label { @apply font-medium text-gray-800; }
+}
+
+/* Reusable UI bits */
+.card { @apply bg-white shadow-sm rounded-lg p-4 md:p-6 border border-gray-200; }
+.btn { @apply inline-flex items-center justify-center rounded-md px-3 md:px-4 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50; }
+.btn-primary { @apply bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-900; }
+.btn-secondary { @apply bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 focus:ring-gray-400; }
+.badge { @apply inline-flex px-2 py-1 rounded text-xs font-semibold; }
+.badge-low { @apply bg-green-100 text-green-700; }
+.badge-medium { @apply bg-yellow-100 text-yellow-700; }
+.badge-high { @apply bg-red-100 text-red-700; }
+
+/* Mobile-first responsive design */
+@layer utilities {
+  .mobile-container {
+    @apply max-w-sm mx-auto px-4;
+  }
+  
+  .mobile-grid {
+    @apply grid grid-cols-1 gap-4;
+  }
+  
+  .mobile-text {
+    @apply text-sm md:text-base;
+  }
+  
+  .mobile-button {
+    @apply w-full py-3 px-4 text-base font-medium;
+  }
+  
+  .mobile-input {
+    @apply w-full py-3 px-4 text-base border border-gray-300 rounded-lg;
+  }
+  
+  .mobile-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-4;
+  }
+}
+
+/* Touch-friendly interactions */
+@layer utilities {
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  .touch-button {
+    @apply py-3 px-4 text-base font-medium rounded-lg;
+  }
+}
+
