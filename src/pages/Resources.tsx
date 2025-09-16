@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import res1 from "../assets/resources/resource1.svg";
+import res2 from "../assets/resources/resource2.svg";
+import res3 from "../assets/resources/resource3.svg";
+import res4 from "../assets/resources/resource4.svg";
+import res5 from "../assets/resources/resource5.svg";
+import res6 from "../assets/resources/resource6.svg";
 
 const Resources: React.FC = () => {
   const { t } = useLanguage();
@@ -22,7 +28,7 @@ const Resources: React.FC = () => {
       type: "video",
       category: "anxiety",
       duration: "15 min",
-      thumbnail: "https://via.placeholder.com/300x200?text=Video+Thumbnail"
+      thumbnail: res1
     },
     {
       id: 2,
@@ -31,7 +37,7 @@ const Resources: React.FC = () => {
       type: "article",
       category: "depression",
       duration: "8 min read",
-      thumbnail: "https://via.placeholder.com/300x200?text=Article+Image"
+      thumbnail: res2
     },
     {
       id: 3,
@@ -40,7 +46,7 @@ const Resources: React.FC = () => {
       type: "audio",
       category: "stress",
       duration: "20 min",
-      thumbnail: "https://via.placeholder.com/300x200?text=Audio+Thumbnail"
+      thumbnail: res3
     },
     {
       id: 4,
@@ -49,7 +55,7 @@ const Resources: React.FC = () => {
       type: "video",
       category: "relationships",
       duration: "12 min",
-      thumbnail: "https://via.placeholder.com/300x200?text=Video+Thumbnail"
+      thumbnail: res4
     },
     {
       id: 5,
@@ -58,7 +64,7 @@ const Resources: React.FC = () => {
       type: "article",
       category: "academic",
       duration: "6 min read",
-      thumbnail: "https://via.placeholder.com/300x200?text=Article+Image"
+      thumbnail: res5
     },
     {
       id: 6,
@@ -67,12 +73,12 @@ const Resources: React.FC = () => {
       type: "video",
       category: "anxiety",
       duration: "18 min",
-      thumbnail: "https://via.placeholder.com/300x200?text=Video+Thumbnail"
+      thumbnail: res6
     }
   ];
 
-  const filteredResources = selectedCategory === "all" 
-    ? resources 
+  const filteredResources = selectedCategory === "all"
+    ? resources
     : resources.filter(resource => resource.category === selectedCategory);
 
   const getTypeIcon = (type: string) => {
@@ -160,7 +166,7 @@ const Resources: React.FC = () => {
                           {getTypeIcon(resource.type)}
                           <span className="capitalize">{resource.type}</span>
                         </div>
-                        <span>•</span>
+                        <span aria-hidden>•</span>
                         <span>{resource.duration}</span>
                       </div>
                     </div>
@@ -190,3 +196,4 @@ const Resources: React.FC = () => {
 };
 
 export default Resources;
+

@@ -9,8 +9,8 @@ const __dirname = path.dirname(__filename);
 // 配置不同的环境URL
 const environments = {
   development: 'http://localhost:5173',
-  production: 'https://your-domain.com', // 请替换为您的实际域名
-  staging: 'https://staging.your-domain.com' // 请替换为您的测试域名
+  production: 'https://deco-a2.vercel.app',
+  staging: 'https://staging.your-domain.com' // 如无测试环境，可忽略
 };
 
 // 生成系统入口二维码
