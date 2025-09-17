@@ -110,15 +110,16 @@ const Landing: React.FC = () => {
           </div>
         </div>
 
-        {/* 紧急联系信息 */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-red-50 border border-red-200 rounded-xl">
-            <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+        {/* SDG 提醒 */}
+        <div className="mt-12 flex justify-center">
+          <div className="inline-flex items-start gap-3 px-6 py-4 bg-green-50 border border-green-200 rounded-xl shadow-sm">
+            <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m2 8a9 9 0 110-18 9 9 0 010 18z" />
             </svg>
-            <span className="text-sm text-red-800 font-medium">
-              {t("landing.emergency")} <span className="font-bold">{t("landing.emergencyHotline")}</span>
-            </span>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-green-800">{t("landing.sdgReminder")}</p>
+              <p className="mt-1 text-sm text-green-700">{t("landing.sdgFocus")}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,4 +128,3 @@ const Landing: React.FC = () => {
 };
 
 export default Landing;
-

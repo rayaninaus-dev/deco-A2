@@ -63,8 +63,8 @@ const translations = {
     "landing.shareSystem": "分享系统",
     "landing.systemQRCode": "系统入口二维码",
     "landing.customQRCode": "自定义二维码",
-    "landing.emergency": "如果您正在经历紧急情况，请立即联系：",
-    "landing.emergencyHotline": "紧急热线：400-161-9995",
+    "landing.sdgReminder": "本项目对标联合国可持续发展目标3：健康与福祉",
+    "landing.sdgFocus": "我们专注于为高中生提供可靠的心理健康支持",
     
     // 信息收集页面
     "intake.title": "需要帮助？",
@@ -281,8 +281,8 @@ const translations = {
     "landing.shareSystem": "Share System",
     "landing.systemQRCode": "System Entry QR Code",
     "landing.customQRCode": "Custom QR Code",
-    "landing.emergency": "If you're experiencing an emergency, please contact immediately:",
-    "landing.emergencyHotline": "Emergency Hotline: 400-161-9995",
+    "landing.sdgReminder": "Aligned with UN Sustainable Development Goal 3: Good Health and Well-being",
+    "landing.sdgFocus": "Focused on supporting high school students' mental health",
     
     // Intake page
     "intake.title": "Need Help?",
